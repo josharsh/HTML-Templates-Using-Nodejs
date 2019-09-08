@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "Name": "Harsh",
+    "Contact": "111222",
+    "Email": "harsh@abc.com",
+    "Coordinator": true
+    },
+	{
+    "id": 1,
+    "Name": "Priyanka",
+    "Contact": "8123456",
+    "Email": "priyanka@abc.com",
+    "Coordinator": true
+    },
+	{
+    "id": 2,
+    "Name": "Mridul",
+    "Contact": "999777",
+    "Email": "mridul@abc.com",
+    "Coordinator": false
+    },
+	{
+    "id": 3,
+    "Name": "Palkin",
+    "Contact": "777888",
+    "Email": " mridul@abc.com",
+    "Coordinator": false
+    },
+	{
+    "id": 0,
+    "Name": "Rachita",
+    "Contact": "123456",
+    "Email": "mridul@abc.com",
+    "Coordinator": false
+    }
+  
+]

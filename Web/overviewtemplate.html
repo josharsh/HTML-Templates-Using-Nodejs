@@ -1,0 +1,81 @@
+<html>
+    <title>
+        Team Roster
+    </title>
+    <style>
+        *,*::before
+        {
+            margin:0;
+            padding:0;
+            box-sizing:inherit;
+        }
+        html {
+        font-size: 62.5%;
+        box-sizing: border-box;
+      }
+      body {
+        padding: 5rem 5rem 10rem; /* Top,Left and Right,Bottom */
+        line-height: 1.7;/*Space Between two lines */
+        font-family: 'Nunito Sans', sans-serif; /*If browser does not support first, it tries second */
+        color:#555;/* Text Color */
+        min-height: 100vh;  /*
+                            vh is relative to view port. VIEW PORT > HTML > BODY 
+                            height: 100vh = 100% of the viewport height
+                            height: 100%  = 100% of the parent's element height 
+                            */
+        background: linear-gradient(to bottom right, #9be15d, #00e3ae);
+                    /* CSS gradients let you display smooth transitions between two or more specified colors. */
+      } 
+      h1 {
+        font-family: 'Megrim', sans-serif;
+        font-size: 6rem; /*rem is relative to root element */
+        color: white;
+        transform: skewY(-5deg); 
+                                /*
+                                The transform property applies a 2D or 3D transformation to an element. 
+                                This property allows you to rotate, scale, move, skew, etc., elements.
+                                */
+        text-align: center;
+        position: relative;
+        word-spacing: 3px;
+      }
+      h1::before {
+        content: '';
+        display: block;
+        height: 75%;
+        width: 52%;
+        position: absolute;
+        top: 105%;
+        left: 50%;
+        background: linear-gradient(to bottom, #9be15d, #00e3ae);
+        opacity: 0.8;
+        z-index: -1; /*
+                        The z-index property specifies the stack order of an element.
+                        An element with greater stack order is always in front of an element with a lower stack order.
+                        Note: z-index only works on positioned elements 
+                        (position: absolute, position: relative, position: fixed, or position: sticky).
+                    */
+        transform: skewY(370deg) translate(-50%, -50%);
+      }
+      .container {
+        width: 95rem;
+        margin: 0 auto;
+      }
+      .cards-container {
+        margin-top: 8rem;
+      }
+
+    </style>
+<body>
+        <div class="container">
+                <h1>Open Source Drive - 2019 </h1>
+          
+                <div class="cards-container">
+                {%STUDENTCARD%}
+                </div>
+                  
+              </div>
+
+
+</body>
+</html>
